@@ -1,0 +1,88 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Flayout"
+    android:background="@color/back1"
+    tools:context="com.example.rashidalikhan.firebasedemo.MainActivity">
+
+    <ImageView android:src="@drawable/lpu"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:id="@+id/myLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Display1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Lovely Professional University"
+            android:textColor="@android:color/primary_text_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Punjab,India"
+            android:id="@+id/pun"
+            android:textColor="@android:color/secondary_text_dark" />
+
+        <ProgressBar
+            android:id="@+id/pro"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:layout_below="@id/pun"
+            android:indeterminateOnly="true"/>
+        <TextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:text="Loading LPU"
+            android:id="@+id/load"
+            android:layout_below="@id/pro"
+            android:textColor="@color/white" />
+        <TextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:text="LPU OutBound Call System"
+            android:id="@+id/chat"
+            android:layout_below="@id/load"
+            android:textColor="@color/white" />
+        <TextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="#LPU_CALL_SYSTEM"
+            android:layout_below="@id/chat"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+     </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>
